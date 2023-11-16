@@ -1,0 +1,13 @@
+{ 
+  "columns": [
+    {"operator": "IN", "fieldName": "column1", "fieldValue": ["value1_1", "value1_2", "value1_3"]},
+    {"operator": "Equal", "fieldName": "column2", "fieldValue": "value2"},
+    {"operator": ">", "fieldName": "column3", "fieldValue": "value3"},
+    {"operator": "<", "fieldName": "column4", "fieldValue": "value4"},
+    {"operator": ">=", "fieldName": "column5", "fieldValue": "value5"},
+    {"operator": "<=", "fieldName": "column6", "fieldValue": "value6"},
+    {"operator": "!=", "fieldName": "column7", "fieldValue": "value7"},
+    {"operator": "LIKE", "fieldName": "column8", "fieldValue": "%pattern%"},
+    {"operator": "BETWEEN", "fieldName": "column9", "fieldValue": {"min": "minValue", "max": "maxValue"}}
+  ]
+}
