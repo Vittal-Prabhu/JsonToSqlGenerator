@@ -1,0 +1,32 @@
+{
+  "tables": [
+    {
+      "tableName": "students",
+      "joinCondition": {
+        "join": "attendance",
+        "conditions": [
+          {"operator": "=", "fieldName": "id", "fieldValue": "student_id"}
+        ]
+      }
+    },
+    {
+      "tableName": "attendance",
+      "joinCondition": {
+        "join": "teachers",
+        "conditions": [
+          {"operator": "=", "fieldName": "teacherId", "fieldValue": "id"}
+        ]
+      }
+    },
+    {
+      "tableName": "teachers"
+    }
+  ],
+  "whereCondition": {
+    "conditions": [
+      {"operator": "=", "fieldName": "students.status", "fieldValue": "active"},
+      {"operator": ">=", "fieldName": "attendance.avaerage", "fieldValue": "75"},
+      {"operator": "=", "fieldName": "teacher.name", "fieldValue": "Vittal"}
+    ]
+  }
+}
